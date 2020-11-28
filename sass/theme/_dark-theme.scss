@@ -1,0 +1,16 @@
+.dark-bg {
+  background-color: var(--dark-bg);
+  color: var(--white);
+}
+
+.dark-bg .page-title,
+.dark-bg .btn,
+.dark-bg .logo {
+  color: var(--white);
+}
+
+.dark-bg .mail-link,
+.dark-bg .tel-link {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
+}
