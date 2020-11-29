@@ -11,31 +11,24 @@
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
-  color: var(--black);
+  @include fonts(14px, 500, 1.142, 0.02em);
+  color: $black;
 }
 
 .current {
-  color: var(--accent-cl);
+  color: $accent-cl;
   position: relative;
-}
 
-.current::after {
-  content: "";
-  display: block;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-cl);
-  position: absolute;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 0;
-  /* margin-top: 32px; */
-  /* left: 0;
-  width: 100%; */
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $accent-cl;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    bottom: 0;
+  }
 }

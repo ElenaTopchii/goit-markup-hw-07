@@ -26,11 +26,11 @@
   align-items: center;
   width: 270px;
   height: 120px;
-  background-color: var(--light-bg);
+  background-color: $light-bg;
 }
 
 .special-icons-svg {
   width: 70px;
   height: 70px;
-  fill: var(--icons-bg);
+  fill: $icons-bg;
 }

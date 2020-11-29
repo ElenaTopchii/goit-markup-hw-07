@@ -10,11 +10,9 @@ html {
 
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
-  color: var(--main-text-cl);
+
+  @include fonts(14px, 400, 1.714, 0.03em);
+  color: $main-text-cl;
 }
 
 h1,
@@ -44,23 +42,19 @@ address {
 
 .title {
   font-family: inherit;
-  color: var(--black);
+  color: $black;
 }
 
 .page-title {
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.363;
-  letter-spacing: 0.06em;
+  @include fonts(44px, 900, 1.363, 0.06em);
   text-transform: uppercase;
 }
+
 .item-title {
   margin-bottom: 10px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.187;
-  color: var(--black);
+  @include fonts(16px, 500, 1.187);
+  color: $black;
 }
 .list {
   list-style: none;
@@ -71,11 +65,11 @@ address {
 .link {
   color: inherit;
   text-decoration: none;
-}
 
-.link:hover,
-.link:focus {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
-  color: var(--accent-cl);
+  &:hover,
+  &:focus {
+    transition: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    color: $accent-cl;
+  }
 }

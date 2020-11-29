@@ -28,20 +28,20 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: #fff;
-  font-weight: bold;
-  font-size: 16px;
+  @include fonts(16px, 700, 1.875, 0.006em);
   text-align: center;
   outline: none;
-}
-.button-footer::after {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
 
-  margin-left: 10px;
-  margin-right: 0;
-  background-image: url(../icons/gitignore.svg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+
+    margin-left: 10px;
+    margin-right: 0;
+    background-image: url(../icons/gitignore.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
 }

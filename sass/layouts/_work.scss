@@ -33,14 +33,10 @@
   left: 0;
   bottom: 0;
   width: 100%;
-
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142;
-  text-align: center;
-  letter-spacing: 0.03em;
+  @include fonts(14px, 700, 1.142);
   text-transform: uppercase;
-  color: var(--white);
+  text-align: center;
+  color: $white;
   margin: 0;
   padding: 0;
   padding-top: 27px;

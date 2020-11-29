@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/fonts";
 
 @import "./base/common";
@@ -6,12 +7,12 @@
 @import "./components/menu";
 @import "./components/logo";
 @import "./components/social_icons";
+@import "./components/contacts";
 @import "./layouts/section";
 
 @import "./layouts/header";
 @import "./layouts/navigation";
 
-@import "./layouts/contacts";
 @import "./layouts/hero";
 @import "./layouts/special";
 @import "./layouts/work";
