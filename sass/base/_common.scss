@@ -11,7 +11,7 @@ html {
 body {
   font-family: "Roboto", sans-serif;
 
-  @include fonts(14px, 400, 1.714, 0.03em);
+  @include fonts(14px, 400, 1.714);
   color: $main-text-cl;
 }
 
@@ -54,6 +54,7 @@ address {
 .item-title {
   margin-bottom: 10px;
   @include fonts(16px, 500, 1.187);
+
   color: $black;
 }
 .list {
@@ -68,8 +69,7 @@ address {
 
   &:hover,
   &:focus {
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    @include transition;
     color: $accent-cl;
   }
 }

@@ -7,9 +7,7 @@
 }
 
 .clients-icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-center;
   width: 170px;
   height: 90px;
   background-color: $white;
@@ -28,14 +26,12 @@
 
 .clients-icons-link:hover,
 .clients-icons-link:focus {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition;
   border: 1px solid $accent-cl;
 }
 
 .clients-icons-link:hover .clients-icons-svg,
 .clients-icons-link:focus .clients-icons-svg {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition;
   fill: $accent-cl;
 }

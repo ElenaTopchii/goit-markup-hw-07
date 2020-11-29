@@ -240,8 +240,8 @@ address {
 
 .mail-link,
 .tel-link {
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.142;
   letter-spacing: 0.02em;
 }
@@ -302,9 +302,10 @@ section {
 
 .section-title {
   margin-bottom: 50px;
-  font-weight: 700;
   font-size: 36px;
-  line-height: 1.166;
+  font-weight: 700;
+  line-height: 1.666;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -676,11 +677,11 @@ section {
 
 .btn-close {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   top: 8px;
   right: 8px;
-  justify-content: center;
-  align-items: center;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -771,6 +772,7 @@ section {
   color: rgba(117, 117, 117, 0.5);
   font-size: 14px;
   font-weight: 400;
+  line-height: 1.142;
   letter-spacing: 0.01em;
 }
 
@@ -786,7 +788,8 @@ section {
 }
 
 .modal-input-ico svg {
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .modal-agree {
@@ -857,7 +860,8 @@ section {
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: #ffffff;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
 }
 
 .modal-btn-send:hover, .modal-btn-send:focus {

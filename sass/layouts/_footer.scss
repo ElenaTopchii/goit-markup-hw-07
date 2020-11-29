@@ -43,9 +43,7 @@
 }
 
 .social-icons-link-footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-center;
   width: 44px;
   height: 44px;
   background: rgba(255, 255, 255, 0.1);
@@ -53,8 +51,7 @@
 
   &:hover,
   &:focus {
-    transition: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
+    @include transition;
     background-color: $accent-cl;
   }
 }

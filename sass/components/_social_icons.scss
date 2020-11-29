@@ -12,9 +12,7 @@
 }
 
 .social-icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-center;
   width: 44px;
   height: 44px;
   background-color: $white;
@@ -29,14 +27,12 @@
 
 .social-icons-link:hover,
 .social-icons-link:focus {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition;
   background-color: $accent-cl;
 }
 
 .social-icons-link:hover .social-icons-svg,
 .social-icons-link:focus .social-icons-svg {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition;
   fill: $white;
 }

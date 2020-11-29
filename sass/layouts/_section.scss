@@ -9,8 +9,6 @@ section {
 
 .section-title {
   margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.166;
+  @include fonts(36px, 700, 1.666);
   text-align: center;
 }

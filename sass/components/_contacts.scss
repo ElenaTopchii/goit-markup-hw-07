@@ -8,10 +8,7 @@
 
 .mail-link,
 .tel-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
+  @include fonts(14px, 500, 1.142, 0.02em);
 }
 
 .mail-icon {
@@ -40,21 +37,18 @@
 
 .contact-item:hover,
 .contact-item:focus {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition;
   fill: $accent-cl;
 }
 
 .contact-item:hover .mail-icon,
 .contact-item:focus .mail-icon {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition;
   fill: $accent-cl;
 }
 
 .contact-item:hover .tel-icon,
 .contact-item:focus .tel-icon {
-  transition: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 250ms;
+  @include transition;
   fill: $accent-cl;
 }

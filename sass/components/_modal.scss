@@ -40,12 +40,11 @@
 }
 
 .btn-close {
-  display: flex;
+  @include display-center;
   position: absolute;
   top: 8px;
   right: 8px;
-  justify-content: center;
-  align-items: center;
+
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -105,44 +104,39 @@
     @include fonts(14px, 400, 1.142, 0.01em);
     resize: none;
   }
-}
-.modal-input-group input:hover,
-.modal-input-group input:focus,
-.modal-input-group textarea:hover,
-.modal-input-group textarea:focus {
-  outline: $accent-cl auto 1px;
-  border: 1px solid $accent-cl;
-}
-.modal-input-group input:hover + .modal-input-ico svg,
-.modal-input-group input:focus + .modal-input-ico svg {
-  fill: $accent-cl;
-}
 
-.modal-input-group textarea::placeholder {
-  color: rgba(117, 117, 117, 0.5);
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.01em;
+  input:hover,
+  input:focus,
+  textarea:hover,
+  textarea:focus {
+    outline: $accent-cl auto 1px;
+    border: 1px solid $accent-cl;
+  }
+  input:hover + .modal-input-ico svg,
+  input:focus + .modal-input-ico svg {
+    fill: $accent-cl;
+  }
+
+  textarea::placeholder {
+    color: rgba(117, 117, 117, 0.5);
+    @include fonts(14px, 400, 1.142, 0.01em);
+  }
 }
 .modal-input-ico {
   position: absolute;
   top: 25px;
   left: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-center;
   width: 18px;
   height: 18px;
 
   svg {
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @include transition;
   }
 }
 
 .modal-agree {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-center;
   margin-bottom: 30px;
   color: $main-text-cl;
   @include fonts(14px, 400, 1.71);
@@ -163,10 +157,9 @@
     overflow: hidden;
   }
   label {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include display-center;
   }
+
   label::before {
     content: "";
     width: 16px;
@@ -196,7 +189,7 @@
   border-radius: 4px;
   @include fonts(16px, 700, 1.875, 0.06em);
   color: #ffffff;
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include transition;
 
   &:hover,
   &:focus {

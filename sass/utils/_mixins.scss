@@ -4,3 +4,14 @@
   line-height: $lh;
   letter-spacing: $ls;
 }
+
+@mixin transition {
+  transition: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+}
+
+@mixin display-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

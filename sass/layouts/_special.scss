@@ -14,16 +14,13 @@
 
 .special-title {
   margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.142;
+  @include fonts(14px, 700, 1.142);
+
   text-transform: uppercase;
 }
 
 .special-icons-link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include display-link;
   width: 270px;
   height: 120px;
   background-color: $light-bg;

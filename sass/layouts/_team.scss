@@ -23,7 +23,7 @@
 }
 
 .team-position {
-  font-size: 16px;
-  line-height: 1.187;
+  @include fonts(16px, 400, 1.187);
+
   color: $main-text-cl;
 }
